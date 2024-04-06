@@ -6,6 +6,7 @@
  `<div class="photos">`
  
 `<a href="https://www.instagram.com/brentgrey/?hl=en" target="_blank"><img src="images/Ilios.jpg" alt="Che Heart Ilios War State"></a>`
+
 `</div>`
 
 This is so that the custom CSS will be applied to your image...for responsiveness and design and also to allow the image link to something as instructed. 🙂
