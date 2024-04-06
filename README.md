@@ -1,6 +1,8 @@
 # mapBenderz
 ## Note:
-**If you're gonna be adding photos to any page you're authoring, please use the format:**
+**If you're gonna be adding photos to any page you're authoring, please use the format below.**
+**Ensure the class for the div is specified correctly**
+
  `_<div class="photos">`_
 `_<a href="https://www.instagram.com/brentgrey/?hl=en" target="_blank"><img src="images/Ilios.jpg" alt="Che Heart Ilios War State"></a>_`
 `_</div>_`
