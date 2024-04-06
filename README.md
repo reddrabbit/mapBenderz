@@ -1,6 +1,7 @@
 # mapBenderz
 ## Note:
 **If you're gonna be adding photos to any page you're authoring, please use the format below.**
+
 **Ensure the class for the div is specified correctly**
 
  `<div class="photos">`
