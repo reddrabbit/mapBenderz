@@ -4,6 +4,7 @@
 **Ensure the class for the div is specified correctly**
 
  `<div class="photos">`
+ 
 `<a href="https://www.instagram.com/brentgrey/?hl=en" target="_blank"><img src="images/Ilios.jpg" alt="Che Heart Ilios War State"></a>`
 `</div>`
 
