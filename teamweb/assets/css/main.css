@@ -2921,6 +2921,12 @@ input, select, textarea {
 		display: block; 
 		margin:auto; 
 	}
+
+	.photos a{
+		color: #252122;
+		text-decoration: none;
+		font-style: italic;
+	}
 	
 	@media screen and (max-width: 1200px) {
 		.photos {
