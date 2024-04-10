@@ -2184,7 +2184,7 @@ input, select, textarea {
 	}
 
 		#banner header {
-			background-color:rgb(20 29 75 / 22%);
+			/*background-color:rgb(20 29 75 / 22%);*/
 			display: inline-block;
 			padding: 2.5em 5em;
 			border-radius: 5px;
@@ -2197,14 +2197,14 @@ input, select, textarea {
 				margin: 0 0 0.65em 0;
 			}
 
-			#banner header p {
+			/* #banner header p {
 				color: #d52349;
 				padding: 0;
 				font-style: normal;
 				margin: 0;
 				font-size: 1.5em;
 				text-align: justify;
-			}
+			}*/
 
 /* Intro */
 
