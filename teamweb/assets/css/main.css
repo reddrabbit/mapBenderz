@@ -2910,7 +2910,7 @@ input, select, textarea {
 	/* Setting up CSS For Images */
 	.photos {
 		width: 1050px; 
-		height: 500px; 
+		height: 100%; 
 		margin: 10px auto; 
 
 	}
