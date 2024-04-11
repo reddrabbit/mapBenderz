@@ -2173,14 +2173,15 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: #CCE8F4 url("../../images/pic01.jpg");
+		background: #CCE8F4 url("../../images/benderz.jpg");
 		background-position: center center;
-		background-size: auto 100%;
+		background-size: 100%;
 		background-repeat: no-repeat;
 		text-align: center;
 		position: relative;
 		padding: 8em 0;
 		margin: 4em 0 0 0;
+		
 	}
 
 		#banner header {
@@ -2195,6 +2196,7 @@ input, select, textarea {
 				font-weight: 700;
 				font-size: 2.5em;
 				margin: 0 0 0.65em 0;
+				-webkit-text-stroke: 1px black;
 			}
 
 			/* #banner header p {
