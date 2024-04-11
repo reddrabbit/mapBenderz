@@ -2956,3 +2956,9 @@ input, select, textarea {
 			height: auto; 
 		}
 	}
+
+	.Notes{
+		margin: 0;
+		font-size: larger;
+		font-weight: bold;
+	}
