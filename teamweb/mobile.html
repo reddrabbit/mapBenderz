@@ -111,28 +111,29 @@
 
 								<!-- Marcus Begins Below -->
 								<header>
-									<h2>No Sidebar</h2>
-									<p>Lorem ipsum dolor sit amet feugiat</p>
+									<h2>QField</h2>
+									<p>Data collection app designed to work with QGIS</p>
 								</header>
 								<p>
-									Vestibulum scelerisque ultricies libero id hendrerit. Vivamus malesuada quam faucibus ante dignissim auctor
-									hendrerit libero placerat. Nulla facilisi. Proin aliquam felis non arcu molestie at accumsan turpis commodo.
-									Proin elementum, nibh non egestas sodales, augue quam aliquet est, id egestas diam justo adipiscing ante.
-									Pellentesque tempus nulla non urna eleifend ut ultrices nisi faucibus.
-									Vestibulum scelerisque ultricies libero id hendrerit. Vivamus malesuada quam faucibus ante dignissim auctor
-									hendrerit libero placerat. Nulla facilisi. Proin aliquam felis non arcu molestie at accumsan turpis commodo.
-									Proin elementum, nibh non egestas sodales, augue quam aliquet est, id egestas diam justo adipiscing ante.
+									What is Q field? Q field is an app designed for mobile data collection in the field and integrates well with 
+									QGIS as it is based on QGIS with the same libraries and has basically an identical interface. The workflow by design 
+									has the user create/ configure their project in QGIS first then prepare and transfer their project/data for QField using 
+									a the QGIS extension QField Sync. They also have their own cloud-based service QCloud for synching data across devices.
 								</p>
 								<p>
-									Praesent a dolor leo. Duis in felis in tortor lobortis volutpat et pretium tellus. Vestibulum ac ante nisl,
-									a elementum odio. Duis semper risus et lectus commodo fringilla. Maecenas sagittis convallis justo vel mattis.
-									placerat, nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-									eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-									elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor.
+									Basic features include zoom, zoom to layer, listing features in a layer, temporal filter (time), access to logs, zoom to current location 
+									(based on GPS), undo button. Includes a lock feature which is useful for a still image display. It also includes a measuring tool and the ability 
+									to print to pdf. 
+								</p>
+
+								<p>
+									Offline functionality: Any edits made offline will still save provided the information has been pre synched before. Must have data synched and loaded onto 
+									QField app prior to loss of internet connection. Alternatively, you can have data from the cloud downloaded onto your mobile device locally then synch back when internet connectivity 
+									returns. Any edits made can then be uploaded back to the cloud and accessed on QGIS.  
 								</p>
 								<section>
 									<header>
-										<h3>Something else</h3>
+										<h3>Workflow</h3>
 									</header>
 									<div class="photos">
 										<a href="https://www.instagram.com/brentgrey/?hl=en" target="_blank"><img src="images/Ilios.jpg" alt="Che Heart Ilios War State"></a>
@@ -157,14 +158,37 @@
 								</section>
 								<section>
 									<header>
-										<h3>So in conclusion ...</h3>
+										<h3>Pros and Cons </h3>
 									</header>
+									<h4>Pros</h4>
+									<ul>
+									<li>Is open source so does not require licensing like Esri products </li>
+									<li>Has a very user-friendly UI that is intuitive and easy to navigate</li>
+									<li>Seamless integration into QGIS with an extension that is easy to use  </li>
+									<li>QField Cloud is an easy way to synch data to your mobile device </li>
+									<li>QField Cloud allows you to download a copy of the project locally to your device in case of internet issues </li>
+									<li>Has a browse and edit mode </li>
+									<li>QGIS has the ability to use ArcGIS REST endpoints and display it in QGIS allowing you to use in QField </li>
+									<li>Free Q Field account has good amount of features</li>
+										<ul>
+											<li>Unlimited public/private projects </li>
+											<li>Basic data hosting and versioning</li>
+											<li>File based projects only </li>
+										</ul>
+									</ul>  
+
+									<h4>Cons</h4>
+									<ul>
+									<li>Is open source so it is not part of Esri ArcGIS infrastructure  </li>
+									<li>More QField Cloud features such as postGIS support, unlimited collaboration and better hosting
+										 and versioning will require a paid subscription  </li>
+									<li> Personal experience: Had issues importing data from ArcGIS REST endpoint </li>
+
+									</ul>  
+
 									<p>
-										Nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-										eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-										elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-										sit amet nullam consequat feugiat dolore tempus. Elementum odio duis semper risus et lectus commodo fringilla.
-										Maecenas sagittis convallis justo vel mattis.
+										Had an issue creating a link to ArcGIS REST endpoint for data where it would say the data layer is missing despite pointing to the REST endpoint. 
+										However this is more of a QGIS issue then a QField issue but is important to note as QField is designed to work with QGIS  
 									</p>
 								</section>
 								<!-- Marcus Ends Here -->
