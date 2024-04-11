@@ -47,7 +47,7 @@
 								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
 								<header>
 									<h2>Web Based Maps - Why do they need to be online?</h2>
-									<p>Exploried via StoryMaps</p>
+									<p>Explored via StoryMaps</p>
 								</header>
 								<p>
 									Web based maps by design rely on frequent server requests to provide their enhanced functionality.  
@@ -110,7 +110,7 @@
 										<h3>Full StoryMaps Offline Results</h3>
 									</header>
 									<ol>
-										<li>ArcGIS Online Web Map – not navigable</li>
+										<li>ArcGIS Online Web Map - not navigable</li>
 										<ul>
 											<li>Acts like an image, can visually see all components</li>
 											<li>Can only access popups of one operational layer</li>
@@ -122,6 +122,59 @@
 											<li>but the base map does zoom in and out, scaling properly!</li>
 										</ul>
 										<li>ArcGIS Online Web app</li>
+										<div class="photos">
+										<img src="images/JmilneWebMaps2.png" alt="Screenshot displaying hillshade and one operational layer works without server requests">
+										</div>
+										<h4>Notes</h4>
+										<ul>
+											<li>the construction site layer, and Wetlands layer both disappear</li>
+											<li>the Runoff potential layer is still visible ….. why?</li>
+											<li>the search function does not work</li>
+											<li>the legend is still present</li>
+											<li>and can still zoom and the base map scales properly for 
+												the full extent of the web app, but only within a certain zoom extent</li>
+												<ul><li>the hill shade has a larger zoom extent than the basemap</li></ul>
+											<li>Cannot access the bookmark even when online, but the home button works offline</li>	
+										</ul>
+										<li>ArcGIS Onilne Map Viewer Iframe</li>
+										<div class="photos">
+											<img src="images/JmilneWebMaps3.png" alt="Screenshot ArcGIS Online Map veiwer does not work without server requests">
+										</div>
+										<h4>Notes</h4>
+										<ul>
+											<li>offline - no popups </li>
+											<li>can zoom a little before the map layer disappears</li>
+											<li>basemap is visible and scales properly for 7 zoom levels</li>
+											<li>oddly the basemap of the world appears when you zoom out far enough</li>
+											<li>hill shade appears at all zoom levels</li>
+											<li>all ArcGIS Online customization functionality is gone in offline - including print</li>
+										</ul>
+										<li>Express Map</li>
+										<div class="photos">
+											<img src="images/JmilneWebMaps4.png" alt="Screenshot ArcGIS Online Express Map does works without server requests">
+										</div>
+										<h4>Notes</h4>
+										<ul>
+											<li>Vector markup layer with point marker, always visible</li>
+											<li>looked like all the tiles centered on the home extent of the map are 
+												loaded initially - navigate away from the home extent and the basemap disappears </li>
+											<li>Fullscreen still works offline</li>	
+											<li>home button works </li>
+											<li>Search does not work offline</li>
+										</ul>
+										<li>Code came in as an image of the text with a copy function - whoops</li>
+										<ul><li>Copy function works without additional server requests</li></ul>
+										<li>Google my maps - embedded Link to a clustered Ontario Parks Map</li>
+										<div class="photos">
+											<img src="images/JmilneWebMaps5.png" alt="Screenshot Google MyMaps has limited function without Server requests">
+										</div>
+										<h4>Notes</h4>
+										<ul>
+											<li>The clustering function still works, (the number is calculated) - but the graphic for the clustered point is lost</li>
+											<li>The individual basic markers still appear once you zoom in farther</li>
+											<li>the basemap that was loaded when server requests were turned off is always visible</li>
+											<li>full screen still works</li>
+										</ul>
 									</ol>
 								</section>
 							</article>
