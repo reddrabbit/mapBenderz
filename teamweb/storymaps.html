@@ -44,60 +44,138 @@
 
 						<!-- Content -->
 							<article class="box post">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+								<a href="#" class="image featured"><img src="images/pic13.jpg" alt="" /></a>
 								<header>
-									<h2>No Sidebar</h2>
-									<p>Lorem ipsum dolor sit amet feugiat</p>
+									<h2>Web Based Maps - Why do they need to be online?</h2>
+									<p>Explored via StoryMaps</p>
 								</header>
 								<p>
-									Vestibulum scelerisque ultricies libero id hendrerit. Vivamus malesuada quam faucibus ante dignissim auctor
-									hendrerit libero placerat. Nulla facilisi. Proin aliquam felis non arcu molestie at accumsan turpis commodo.
-									Proin elementum, nibh non egestas sodales, augue quam aliquet est, id egestas diam justo adipiscing ante.
-									Pellentesque tempus nulla non urna eleifend ut ultrices nisi faucibus.
-									Vestibulum scelerisque ultricies libero id hendrerit. Vivamus malesuada quam faucibus ante dignissim auctor
-									hendrerit libero placerat. Nulla facilisi. Proin aliquam felis non arcu molestie at accumsan turpis commodo.
-									Proin elementum, nibh non egestas sodales, augue quam aliquet est, id egestas diam justo adipiscing ante.
+									Web based maps by design rely on frequent server requests to provide their enhanced functionality.  
+
+									But what Web applications require fewer server requests? Is there a web application that loads the entire map all at once, and could still function ‘offline’ until the page was refreshed? 
+
+									To test this we discovered a handy tool in the F12 menu - you can turn a Web page offline! 
+
+									This is part of the network throttling settings.  Designed to help programmers test their website on slower internet connections.  
 								</p>
+								<div class="photos">
+									<img src="images/JmilneWebMaps1.png" alt="Screenshot of F12 Network Settings">
+								</div>
 								<p>
-									Praesent a dolor leo. Duis in felis in tortor lobortis volutpat et pretium tellus. Vestibulum ac ante nisl,
-									a elementum odio. Duis semper risus et lectus commodo fringilla. Maecenas sagittis convallis justo vel mattis.
-									placerat, nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-									eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-									elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor.
+									But for our purposes by setting throttling to 'Offline' we are disabling server requests, by disconnecting the website from its server to understand what functions could work offline. 
+
+									This Story map was built where we embedded web maps from may different places, and then disabled server requests, to see if they load differently and allow offline navigation 
 								</p>
+								<ul>
+									<li>ArcGIS Online Map with navigation enabled </li>
+									<li>ArcGIS Online Map with Searching Enabled</li>
+									<li>ArcGIS Online Map without navigation enabled</li>
+									<li>ArcGIS Online Web Application with bookmarks</li>
+									<li>Embeded links to Google MyMaps</li>
+								</ul>
 								<section>
 									<header>
-										<h3>Something else</h3>
+										<h3>Try it out!</h3>
 									</header>
 									<p>
-										Elementum odio duis semper risus et lectus commodo fringilla. Maecenas sagittis convallis justo vel mattis.
-										placerat, nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-										eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-										elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-										sit amet nullam consequat feugiat dolore tempus.
-										Elementum odio duis semper risus et lectus commodo fringilla. Maecenas sagittis convallis justo vel mattis.
-										placerat, nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-										eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-										elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor.
+										Story maps requires server requests to pull content. To test a map,  
 									</p>
+									<ol>
+										<li>Scroll to a map, and let it load fully </li>
+										<li>Open the F12 menu - go to the network Ribbon </li>
+										<li>Click the 'No throttling' dropdown menu</li>
+										<li>Select 'Offline' to disable server requests</li>
+										<li>Test the Map! What breaks and What works?</li>
+									</ol>
+									<a href="https://storymaps.arcgis.com/stories/bf88dabfe6c24380853b767e26c541a0 ">Link to Story Map: Web Maps offline?</a>
+									
+								</section>
+								<section>
+									<header>
+										<h3>TL;DR Story Map results</h3>
+									</header>
 									<p>
-										Nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-										eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-										elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-										sit amet nullam consequat feugiat dolore tempus.
+										None of the maps work well with server request disabled, except the Express map, but this is due to 
+										the simplicity of the map, (a grey basemap with 1 labeled point and line feature) and is not 
+										scalable. The most surprising results came from the Google MyMaps. Where the entire point layer 
+										once loaded was navigable, and while the clustered point icon was lost, they were still 
+										calculating and displaying the correct number. However the basemap was lost just like with 
+										ArcGIS Online maps. This indicates that if you didn't need a basemap, it may be possible to 
+										load all your operational vector layers at once, and they would be 'accessible offline' 
+										(until the page refreshes).
 									</p>
 								</section>
 								<section>
 									<header>
-										<h3>So in conclusion ...</h3>
+										<h3>Full StoryMaps Offline Results</h3>
 									</header>
-									<p>
-										Nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-										eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-										elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-										sit amet nullam consequat feugiat dolore tempus. Elementum odio duis semper risus et lectus commodo fringilla.
-										Maecenas sagittis convallis justo vel mattis.
-									</p>
+									<ol>
+										<li>ArcGIS Online Web Map - not navigable</li>
+										<ul>
+											<li>Acts like an image, can visually see all components</li>
+											<li>Can only access popups of one operational layer</li>
+										</ul>
+										<li>ArcGIS Online Web map - navigable</li>
+										<ul>
+											<li>Popups do not work when offline </li>
+											<li>as soon as you zoom the operational layers vanish</li>
+											<li>but the base map does zoom in and out, scaling properly!</li>
+										</ul>
+										<li>ArcGIS Online Web app</li>
+										<div class="photos">
+										<img src="images/JmilneWebMaps2.png" alt="Screenshot displaying hillshade and one operational layer works without server requests">
+										</div>
+										<h4>Notes</h4>
+										<ul>
+											<li>the construction site layer, and Wetlands layer both disappear</li>
+											<li>the Runoff potential layer is still visible ….. why?</li>
+											<li>the search function does not work</li>
+											<li>the legend is still present</li>
+											<li>and can still zoom and the base map scales properly for 
+												the full extent of the web app, but only within a certain zoom extent</li>
+												<ul><li>the hill shade has a larger zoom extent than the basemap</li></ul>
+											<li>Cannot access the bookmark even when online, but the home button works offline</li>	
+										</ul>
+										<li>ArcGIS Onilne Map Viewer Iframe</li>
+										<div class="photos">
+											<img src="images/JmilneWebMaps3.png" alt="Screenshot ArcGIS Online Map veiwer does not work without server requests">
+										</div>
+										<h4>Notes</h4>
+										<ul>
+											<li>offline - no popups </li>
+											<li>can zoom a little before the map layer disappears</li>
+											<li>basemap is visible and scales properly for 7 zoom levels</li>
+											<li>oddly the basemap of the world appears when you zoom out far enough</li>
+											<li>hill shade appears at all zoom levels</li>
+											<li>all ArcGIS Online customization functionality is gone in offline - including print</li>
+										</ul>
+										<li>Express Map</li>
+										<div class="photos">
+											<img src="images/JmilneWebMaps4.png" alt="Screenshot ArcGIS Online Express Map does works without server requests">
+										</div>
+										<h4>Notes</h4>
+										<ul>
+											<li>Vector markup layer with point marker, always visible</li>
+											<li>looked like all the tiles centered on the home extent of the map are 
+												loaded initially - navigate away from the home extent and the basemap disappears </li>
+											<li>Fullscreen still works offline</li>	
+											<li>home button works </li>
+											<li>Search does not work offline</li>
+										</ul>
+										<li>Code came in as an image of the text with a copy function - whoops</li>
+										<ul><li>Copy function works without additional server requests</li></ul>
+										<li>Google my maps - embedded Link to a clustered Ontario Parks Map</li>
+										<div class="photos">
+											<img src="images/JmilneWebMaps5.png" alt="Screenshot Google MyMaps has limited function without Server requests">
+										</div>
+										<h4>Notes</h4>
+										<ul>
+											<li>The clustering function still works, (the number is calculated) - but the graphic for the clustered point is lost</li>
+											<li>The individual basic markers still appear once you zoom in farther</li>
+											<li>the basemap that was loaded when server requests were turned off is always visible</li>
+											<li>full screen still works</li>
+										</ul>
+									</ol>
 								</section>
 							</article>
 

@@ -2910,7 +2910,7 @@ input, select, textarea {
 	/* Setting up CSS For Images */
 	.photos {
 		width: 1050px; 
-		height: 500px; 
+		height: 100%; 
 		margin: 10px auto; 
 
 	}
@@ -2920,6 +2920,12 @@ input, select, textarea {
 		max-height: 100%; 
 		display: block; 
 		margin:auto; 
+	}
+
+	.photos a{
+		color: #252122;
+		text-decoration: none;
+		font-style: italic;
 	}
 	
 	@media screen and (max-width: 1200px) {
