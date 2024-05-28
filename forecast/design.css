@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Jost", sans-serif;
+    background: rgb(51, 47, 68);
+    background-image: url('https://source.unsplash.com/2000x1000/?earth,nature,landscape');
+    background-repeat: no-repeat;
+} */
+
+body{
+    margin: 0;
+    font-family: "Jost", sans-serif;
+    background: rgb(51, 47, 68);
+    background-image: url('https://source.unsplash.com/2000x1000/?earth,nature,landscape');
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+}
+
+
+.nav {
+overflow: hidden;
+background-color: #234770;
+}
+  
+.nav a {
+float:right;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+ text-decoration: none;
+font-size: 17px;
+}
+  
+.nav a:hover {
+ background-color: #ffffff;
+color: black;
+border-radius: 30px;
+}
+ 
+.nav a.active {
+background-color: #049faa;
+color: white;
+border-radius: 30px;
+ }
+
+
+/* Container design */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* Adjust height as needed to fit your design */
+}
+/* Style the card */
+.card{
+    background: rgba(23, 26, 41, 0.548);
+    padding: 4em;
+    border-radius: 36px;
+    width: 100%;
+    max-width: 400px;
+    margin: 1em;
+    color: white;
+    border: #c3c3c336 1px solid;
+}
+
+h1.temp{
+    margin:0;
+    margin-bottom: 0.3em;
+}
+
+/* Stylig the search box */
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Button Style */
+button:hover {
+    background: WHITE;
+    color: black;
+}
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    height: 3em;
+    width: 3em;
+    border: none;
+    outline: none;
+    cursor: POINTER;
+    color: white;
+    background: #00000057;
+    transition: 0.3s ease-in-out;
+}
+/* Styling the Input */
+input.searchBar {
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    background: #00000057;
+    color: white;
+    font-family: inherit;
+    font-size: 100%;
+}
+
+/* Light Styling */
+.description{
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.flexbox{
+    display: flex;
+    align-items: center;
+}
