@@ -3,18 +3,6 @@
     margin: 0;
 }
 
-/* body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: "Jost", sans-serif;
-    background: rgb(51, 47, 68);
-    background-image: url('https://source.unsplash.com/2000x1000/?earth,nature,landscape');
-    background-repeat: no-repeat;
-} */
-
 body{
     margin: 0;
     font-family: "Jost", sans-serif;

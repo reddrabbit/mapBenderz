@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Random Image</title>
+  <style>
+    body {
+      background-color: rgb(16, 170, 162);
+      text-align: center;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #unsplashImage {
+      max-height: 500px;
+      border: 20px solid black;
+      transform: rotate(3deg);
+    }
+
+    h1 {
+      font-size: 56px;
+    }
+
+    .imageDetails {
+      background-color: black;
+      margin-top: 50px;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      width: fit-content;
+    }
+
+    .imageDetails a {
+      color: #FFF;
+    }
+
+    .imageDetails a:hover {
+      color: rgb(212, 247, 86);
+    }
+  </style>
+</head>
+<body>
+  <h1>Random Unsplash Image</h1>
+  <div class="imageContainer">
+    <a id="imageLink" href="#">
+      <img alt="" id="unsplashImage" />
+    </a>
+  </div>
+  <p class="imageDetails">Photo by <a id="creator" href="#">NAME</a> on <a href="https://www.unsplash.com">Unsplash</a>!</p>
+  <!-- Generate API Call -->
+  <script>
+    let ID = "f3et1hh0FZ5gqT7fRcJYryWnEQ9la0xI_UM1opxrb_Q";
+    let photo = 'https://api.unsplash.com/photos/random?client_id=' + ID;
+
+    let image = document.querySelector("#unsplashImage");
+    let creator = document.querySelector("#creator");
+
+    fetch(photo)
+      .then(function(response) {
+        return response.json(); // Return the parsed JSON data
+      })
+      .then(function(jsonData) {
+        image.src = jsonData.urls.regular;
+        creator.textContent = jsonData.user.name; // Set the creator's name
+        creator.href = jsonData.user.links.html; // Set the link to the creator's Unsplash profile
+      });
+  </script>
+</body>
+</html>
