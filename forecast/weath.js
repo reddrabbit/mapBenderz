@@ -20,7 +20,7 @@ let weather = {
         const {speed} = data.wind;
         // Access containers from the HTML that have been created to host the data
         document.querySelector(".city").innerText = "The Weather in "+ name;
-        document.querySelector(".weatherIcon").src="http://openweathermap.org/img/w/" + icon + ".png";
+        document.querySelector(".weatherIcon").src="https://openweathermap.org/img/w/" + icon + ".png";
         document.querySelector(".temp").innerText = Math.round(temp)+"°C";
         document.querySelector(".description").innerText = description;
         document.querySelector(".wind").innerText = "Windspeed: "+ speed+" km/h";
