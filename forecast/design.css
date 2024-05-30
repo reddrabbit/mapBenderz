@@ -10,22 +10,30 @@ body{
     background-image: url('https://source.unsplash.com/1900x1200/?clouds,nature');
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 100vh; */
 }
 
-
+/* Nav Bar Design */
 .nav {
 overflow: hidden;
 background-color: #003a66;
+max-height: fit-content;
 }
-  
+
+
+.nav img{
+    float: left;
+    max-height: 50px;
+    padding: 4px;
+    margin-left: 8px;
+}
+
 .nav a {
 float:right;
 color: #f2f2f2;
 text-align: center;
-padding: 14px 16px;
- text-decoration: none;
-font-size: 17px;
+padding: 12px 14px;
+text-decoration: none;
+font-size: 16px;
 }
   
 .nav a:hover {
@@ -46,7 +54,7 @@ border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 100px); /* Adjust height as needed to fit your design */
+    height: calc(100vh - 100px);
 }
 /* Style the card */
 .card{
@@ -100,7 +108,7 @@ input.searchBar {
     font-size: 100%;
 }
 
-/* Light Styling */
+/* Weather Report Styling */
 .description{
     text-transform: capitalize;
     margin-left: 8px;
