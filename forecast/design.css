@@ -119,3 +119,26 @@ input.searchBar {
     display: flex;
     align-items: center;
 }
+
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+
+    .nav {
+        width: calc(100%);
+    }
+
+    .nav img{
+        max-height: 40px;
+    }
+
+    .nav a{
+        font-size: 14px;
+    }
+
+    body{
+        background-position:center;
+        background-size:cover;
+    }
+
+}
