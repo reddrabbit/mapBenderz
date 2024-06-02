@@ -92,15 +92,16 @@ button:hover {
 }
 button {
     margin: 0.5em;
-    border-radius: 50%;
-    height: 3em;
-    width: 3em;
+    border-radius: 70%;
+    height: 2.5em;
+    width: 3.5em;
     border: none;
     outline: none;
     cursor: POINTER;
     color: white;
     background: #00000057;
     transition: 0.3s ease-in-out;
+    padding: 1px 9px;
 }
 /* Styling the Input */
 input.searchBar {
