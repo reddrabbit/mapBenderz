@@ -42,5 +42,9 @@ document.querySelector(".searchBar").addEventListener("keyup", function(event){
         weather.search();
     }
 });
+document.getElementById("precipitation").addEventListener("click", function(){
+    const url = 'rainview.html';
+    window.open(url, '_blank');
+});
 // Call getweather function on a default city. Change as per your preferences.
 weather.getWeather("Oshawa");
