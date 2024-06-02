@@ -139,5 +139,7 @@ input.searchBar {
     .nav a{
         font-size: 14px;
     }
-
+    body{
+        background-position: center;
+    }
 }
