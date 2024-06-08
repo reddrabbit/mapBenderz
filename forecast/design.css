@@ -9,7 +9,8 @@ body{
     font-family: "Jost", sans-serif;
     background: #003a66;
     /* Background image credit: Unsplash.com's random image generator URL */
-    background-image: url('https://source.unsplash.com/1900x1200/?clouds,nature');
+    /* background-image: url('https://source.unsplash.com/1900x1200/?clouds,nature'); */
+    background-image: url('assets/images/mediumBG.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
