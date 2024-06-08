@@ -88,6 +88,6 @@ let weather = {
     document.getElementById("precipitation").addEventListener("click", function(){
         const url = 'rainview.html';
         window.open(url, '_parent');
-    });1
+    });
     // Call getweather function on a default city. Change as per your preferences.
     weather.getWeather("Oshawa");
