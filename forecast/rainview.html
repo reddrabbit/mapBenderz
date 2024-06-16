@@ -24,7 +24,18 @@
 
 </head>
 <body>
+    <!-- Splash Screen Intro -->
+    <div id="splash-screen">
+        <div class="splash-content">
+            <h1>How to: Rainviewer!</h1>
+            <p>Click on the cloud icon on the top right of the webpage to access the RADAR weather watcher for precipitation. <br> <br> Click "OK" to proceed.</p>
+            <button id="ok-button">OK</button>
+            <!-- <button id="cancel-button">Cancel</button> -->
+        </div>
+    </div>
+    <!-- End Splash Screen -->
 
+    <!-- Main Content Start -->
     <!-- NavBar -->
     <div class="nav">
         <img src="assets/images/Clarington-Logo-White.png" alt="Logo for the Municipality of Clarington">
@@ -34,13 +45,29 @@
       </div>
 
     <div id = 'map'></div>
+
+
+
+<!-- Splash Screen Script -->
+<script>
+    document.getElementById('ok-button').addEventListener('click', function() {
+    document.getElementById('splash-screen').style.display = 'none';
+    document.getElementById('main-content').style.display = 'block';
+});
+
+document.getElementById('cancel-button').addEventListener('click', function() {
+    document.getElementById('splash-screen').style.display = 'none';
+    document.getElementById('main-content').style.display = 'block';
+});
+</script>
+
+
     <script>
+    // Leaflet Map
         var map = L.map('map').setView([43.934536,-78.600037],10);
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
-
-
 
         // RainViewer
         L.control.rainviewer({ 
@@ -53,8 +80,8 @@
         animationInterval: 280,
         opacity: 0.4
     }).addTo(map);
-
     </script>
+
 
 
     
