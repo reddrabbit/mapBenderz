@@ -31,6 +31,9 @@
             <p>Click on the cloud icon on the top right of the webpage to access the RADAR weather watcher for precipitation. <br> <br> Click "OK" to proceed.</p>
             <button id="ok-button">OK</button>
             <!-- <button id="cancel-button">Cancel</button> -->
+            <label>
+                <input type="checkbox" id="do-not-show-again"> Got it. Don't show this again.
+            </label>
         </div>
     </div>
     <!-- End Splash Screen -->
@@ -50,15 +53,22 @@
 
 <!-- Splash Screen Script -->
 <script>
-    document.getElementById('ok-button').addEventListener('click', function() {
-    document.getElementById('splash-screen').style.display = 'none';
-    document.getElementById('main-content').style.display = 'block';
-});
+document.addEventListener('DOMContentLoaded', function() {
+            // Check if the splash screen should be shown
+            if (localStorage.getItem('doNotShowSplash') === 'true') {
+                document.getElementById('splash-screen').style.display = 'none';
+            } else {
+                document.getElementById('splash-screen').style.display = 'flex';
+            }
 
-document.getElementById('cancel-button').addEventListener('click', function() {
-    document.getElementById('splash-screen').style.display = 'none';
-    document.getElementById('main-content').style.display = 'block';
-});
+            // Add event listener for the OK button
+            document.getElementById('ok-button').addEventListener('click', function() {
+                if (document.getElementById('do-not-show-again').checked) {
+                    localStorage.setItem('doNotShowSplash', 'true');
+                }
+                document.getElementById('splash-screen').style.display = 'none';
+            });
+        });
 </script>
 
 

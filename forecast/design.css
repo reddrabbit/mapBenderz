@@ -223,3 +223,9 @@ input.searchBar {
     background-color: #4CAF50;
     color: white;
 }
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
