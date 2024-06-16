@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>MapBenderz!</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="assets/css/main.css">
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="#">Python Scripting</a></h1>
+
+					<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="project.html">Project</a></li>
+							<li>
+								<a href="#">Process Walkthrough</a>
+								<ul>
+									<li><a href="mmpk.html">Mobile Map Packages</a></li>
+									<li><a href="webapp.html">Web app creation</a></li>
+									<li><a href="spatial.html">Spatial Analytics</a></li>
+								</ul>
+							</li>
+							<li><a href="result.html">Result</a></li>
+						</ul>
+					</nav>
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+
+						<!-- Content -->
+							<article class="box post">
+								<a href="#" class="image featured"><img src="images/pic13.jpg" alt=""></a>
+								<header>
+									<h2>MapSync Pyton Tool</h2>
+									<p>Automated Updates for Your Emergency Mapping Needs</p>
+								</header>
+								<!-- Main Content Below -->
+								<p>
+									Remember to use this syntax for mobile screenshots: <br> <pre>
+										&lt; div class = 'mobile'&gt; 
+										&lt; img src = 'path to image' alt = 'some alt text' &gt;
+										&lt;/div&gt;
+									</pre>
+									<br>
+									And use this for desktop images 🙂: 
+									<br> <pre>
+										&lt; div class = 'photos'&gt; 
+										&lt; img src = 'path to image' alt = 'some alt text' &gt;
+										&lt;/div&gt;
+									</pre>
+								</p>
+								<div class="photos">
+									<img src="images/JmilneWebMaps1.png" alt="Screenshot of F12 Network Settings">
+								</div>
+								<p>
+									But for our purposes by setting throttling to 'Offline' we are disabling server requests, by disconnecting the website from its server to understand what functions could work offline. 
+
+									This Story map was built where we embedded web maps from may different places, and then disabled server requests, to see if they load differently and allow offline navigation 
+								</p>
+								<ul>
+									<li>ArcGIS Online Map with navigation enabled </li>
+									<li>ArcGIS Online Map with Searching Enabled</li>
+									<li>ArcGIS Online Map without navigation enabled</li>
+									<li>ArcGIS Online Web Application with bookmarks</li>
+									<li>Embeded links to Google MyMaps</li>
+								</ul>
+								<section>
+									<header>
+										<h3>Try it out!</h3>
+									</header>
+									<p>
+										Story maps requires server requests to pull content. To test a map,  
+									</p>
+									<ol>
+										<li>Scroll to a map, and let it load fully </li>
+										<li>Open the F12 menu - go to the network Ribbon </li>
+										<li>Click the 'No throttling' dropdown menu</li>
+										<li>Select 'Offline' to disable server requests</li>
+										<li>Test the Map! What breaks and What works?</li>
+									</ol>
+									<a href="https://storymaps.arcgis.com/stories/bf88dabfe6c24380853b767e26c541a0 ">Link to Story Map: Web Maps offline?</a>
+									
+								</section>
+								<section>
+									<header>
+										<h3>TL;DR Story Map results</h3>
+									</header>
+									<p>
+										None of the maps work well with server request disabled, except the Express map, but this is due to 
+										the simplicity of the map, (a grey basemap with 1 labeled point and line feature) and is not 
+										scalable. The most surprising results came from the Google MyMaps. Where the entire point layer 
+										once loaded was navigable, and while the clustered point icon was lost, they were still 
+										calculating and displaying the correct number. However the basemap was lost just like with 
+										ArcGIS Online maps. This indicates that if you didn't need a basemap, it may be possible to 
+										load all your operational vector layers at once, and they would be 'accessible offline' 
+										(until the page refreshes).
+									</p>
+								</section>
+								<!-- Concluding Notes Section -->
+								<section>
+									<header>
+										<h3>PERILOUS ENCOUNTER</h3>
+									</header>
+									<p>
+										Mobile GIS services are a great way to view and edit data in the field. Today's mobile GIS options have some great
+										functionality to support offline use. These include tools such as local backups and cloud synchronization. Additional features include good UI for simplified 
+										data editing or collection and good integration with their desktop counterparts. 
+									</p>
+								</section>
+								</section>
+							</article>
+
+					</div>
+				</section>
+
+			<!-- Footer -->
+			<section id="footer">
+				<div id="copyright">
+					<ul class="links">
+						<li>&copy; MapBenderz</li><li>Thank you for showing up!</li>
+					</ul>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>MapBenderz!</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="assets/css/main.css">
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="#">Web App and Emergency Dashboard</a></h1>
+
+					<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="project.html">Project</a></li>
+							<li>
+								<a href="#">Process Walkthrough</a>
+								<ul>
+									<li><a href="mmpk.html">Mobile Map Packages</a></li>
+									<li><a href="python.html">Python Scripting</a></li>
+									<li><a href="spatial.html">Spatial Analytics</a></li>
+								</ul>
+							</li>
+							<li><a href="result.html">Result</a></li>
+						</ul>
+					</nav>
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+
+						<!-- Content -->
+							<article class="box post">
+								<a href="#" class="image featured"><img src="images/pic12.jpg" alt=""></a>
+								<header>
+									<h2>Situational Awareness 2.0</h2>
+									<p>Supporting Emergency Decisions with Real-Time Data</p>
+								</header>
+								<p>
+									Remember to use this syntax for mobile screenshots: <br> <pre>
+										&lt; div class = 'mobile'&gt; 
+										&lt; img src = 'path to image' alt = 'some alt text' &gt;
+										&lt;/div&gt;
+									</pre>
+									<br>
+									And use this for desktop images 🙂: 
+									<br> <pre>
+										&lt; div class = 'photos'&gt; 
+										&lt; img src = 'path to image' alt = 'some alt text' &gt;
+										&lt;/div&gt;
+									</pre>
+								</p>
+								<section>
+									<header>
+										<h3>Setting up a simple web application </h3>
+									</header>
+									<h4>SELECTING A TEMPLATE </h4>
+									<p>
+										The first step is to select from the numerous templates on experience builder. We decided to go with the blank full screen template for our solution here. This was so we could get a feel for the interface and operability from scratch. 
+									</p>
+									<div class="photos">
+										<img src="images/MylesXPBuild0.png" alt="Experience Builder Template Selection">
+									</div>
+									<div class="photos">
+										<img src="images/MylesXPBuild1.png" alt="Blank Template Selected on Experience Builder">
+									</div>
+									<h4>CONNECTING TO THE DATA SOURCE(S)</h4> 
+									<p>
+										The next step was to connect to our data. A web map of the municipality of Clarington we created via AGOL. Experience builders allow data in the form of feature services, map services, and web scenes. Other data types (GeoJSON, CSV, etc.) cannot be added as data sources. 
+									</p>
+									<div class="photos">
+										<img src="images/MylesXPBuild2.png" alt="Selectind Data Sources to connect to on Experience Builder">
+									</div>
+									<h4>ADDING WIDGETS TO THE WORKSPACE</h4> 
+									<p>After the data sources have been identified for the map, developers (with or without coding knowledge) can go ahead and add widgets to the map. Widgets can be used to achieve all sorts of results. From displaying map data to calculating spatial analysis. The data is consumed by widgets. </p>
+									<div class="photos">
+										<a href="https://experience.arcgis.com/experience/f14655e591024d57b65f06993fd024a7/" target="_blank">Click to view web app<img src="images/MylesXPBuild3.png" alt="Selectind Data Sources to connect to on Experience Builder"></a>
+									</div>
+								</section>
+
+								<!-- Concluding Section -->
+								<section>
+									<header>
+										<h3>Drawbacks and Limitations:</h3>
+									</header>
+									<p>
+										We quickly discovered that the experience builder option did not support offline mapping or workflows for offline mapping in any form. We then tried to embed our offline map package we created for ESRI field maps via the Field Maps Designer, however, these offline areas cannot be viewed without the field maps mobile apps. The most you can share would be a bar code that can be scanned and a link. Both, however, only direct the end user to the ESRI Field maps’ download page, not the map itself.  
+
+									Right now, there is no way to pair Experience Builder and all its functionality with Field Maps’ offline functionality. 
+
+									As stated in the overview, the widgets do not have any proper dialogue for how they work and how they can be configured to reach their full potential. Requires a bit of repetitive trials and configuration to get it done.  
+									</p>
+
+									<header>
+										<h3>In Conclusion</h3>
+									</header>
+									<p>
+										Getting a web application deployed using ESRI’s Experience Builder is as quick as they say but may be a bit challenging for first time users.  
+
+										The challenging part lies in trying to link a widget’s functions with another widget. Outside of this, it is a useful tool to deploy web apps and offers analytical widgets to fulfill spatial needs. 
+									</p>
+								</section>
+							</article>
+
+					</div>
+				</section>
+
+			<!-- Footer -->
+			<section id="footer">
+				<div id="copyright">
+					<ul class="links">
+						<li>&copy; MapBenderz</li><li>Thank you for showing up!</li>
+					</ul>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
