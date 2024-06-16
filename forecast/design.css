@@ -136,11 +136,11 @@ input.searchBar {
     }
 
     .nav img{
-        max-height: 40px;
+        max-height: 30px;
     }
 
     .nav a{
-        font-size: 14px;
+        font-size: 12px;
     }
     body{
         background-position: center;
