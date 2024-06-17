@@ -154,17 +154,19 @@ input.searchBar {
     }
 
     .splash-content {
-        max-width: 90%;
+        max-width: 100%;
         padding: 20px;
         text-align: center;
+        
     }
 
     .splash-content h1 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .splash-content p {
-        font-size: 16px;
+        font-size: 15px;
+        text-align: center;
     }
 
     .splash-content button, .splash-content label {
