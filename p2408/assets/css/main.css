@@ -100,7 +100,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro';
 		font-weight: 300;
-		color: #5d5d5d;
+		color: #ffffff;
 		font-size: 14pt;
 		line-height: 1.75em;
 	}
@@ -133,7 +133,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #252122;
+		color: #ffffff;
 		font-weight: 700;
 	}
 
@@ -1568,7 +1568,7 @@ input, select, textarea {
 /* Box */
 
 	.box {
-		background: #ffffff;
+		background: #21303a;
 		border-bottom: solid 1px #ccc;
 		padding: 2.75em 1.75em 2.75em 1.75em;
 	}
@@ -2065,14 +2065,14 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		background: #ffffff;
+		background: #19252d;
 		border-bottom: solid 1px #ccc;
 		padding: 5em 0 4em 0;
 		text-align: center;
 	}
 
 		#header h1 {
-			color: #252122;
+			color: #ffffff;
 			font-weight: 900;
 			font-size: 2.5em;
 			letter-spacing: -0.035em;
@@ -2101,7 +2101,7 @@ input, select, textarea {
 
 				#nav > ul > li > a {
 					border-radius: 5px;
-					color: #5d5d5d;
+					color: #ffffff;
 					text-decoration: none;
 					padding: 0.6em 1.2em 0.6em 1.2em;
 					-moz-transition: background-color .25s ease-in-out;
@@ -2113,10 +2113,12 @@ input, select, textarea {
 
 				#nav > ul > li:hover > a, #nav > ul > li.active > a {
 					background: #f3f3f3;
+					color: #bf8600;
+					font-weight: 800;
 				}
 
 				#nav > ul > li.current > a {
-					background: #d52349;
+					background: #bf8600;
 					color: #fff !important;
 					font-weight: 700;
 				}
@@ -2268,7 +2270,7 @@ input, select, textarea {
 
 	#main {
 		position: relative;
-		background: #f7f7f7;
+		background: #19252d;
 		padding: 4em 0 4em 0;
 	}
 
@@ -2285,14 +2287,14 @@ input, select, textarea {
 		}
 
 		#main .major h2 {
-			background: #f7f7f7;
+			background: #000000;
 		}
 
 /* Footer */
 
 	#footer {
 		position: relative;
-		color: #858484;
+		color: #ffffff;
 		padding: 4em 0;
 	}
 
@@ -2962,7 +2964,7 @@ input, select, textarea {
 		margin: 0;
 		font-size: large;
 		font-weight: 400;
-		color: #151112;
+		color: #ffffff;
 	}
 
 
