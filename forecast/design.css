@@ -141,6 +141,7 @@ input.searchBar {
 
     .nav a{
         font-size: 12px;
+        padding: 8px;
     }
     body{
         background-position: center;
