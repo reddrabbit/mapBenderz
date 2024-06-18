@@ -44,25 +44,24 @@
 									<p>Supporting Emergency Decisions with Real-Time Data</p>
 								</header>
 								<p>
-									Remember to use this syntax for mobile screenshots: <br> <pre>
-										&lt; div class = 'mobile'&gt; 
-										&lt; img src = 'path to image' alt = 'some alt text' &gt;
-										&lt;/div&gt;
-									</pre>
-									<br>
-									And use this for desktop images 🙂: 
-									<br> <pre>
-										&lt; div class = 'photos'&gt; 
-										&lt; img src = 'path to image' alt = 'some alt text' &gt;
-										&lt;/div&gt;
-									</pre>
+									The Situational Awareness 2.0 application was created using Esri's Experience Builder. The first step was to select from the numerous templates on Experience Builder. 
+									We decided to go with the foldable template for our solution here. It provided a broiler plate environment for easily embedding a map and widgets.
+									After deploying the widget, we embedded a webmap with the aid of the map widget. The webmap was created and deployed to a web environment using ArcGIS Pro. 
+									<br> Once the map was deployed, we proceeded to set up and customize the widgets needed to make the situational awareness 2.0 function as a support tool during emergency
+									scenarios. We customized 20 widgets in total for this solution namely the near me, map, sidebar, table, and directions widgets. Just to name a few. 
+									<br>After setting up the widgets, we then added the logo of our client, links to the supporting products (Traffic watch dashboard and Weather application), 
+									and polished the user interface of the web application to meet required web app standards, prioritizing
+									simplicity and easy navigation for the users. 
+
 								</p>
+								<!-- Supporting Products -->
 								<section>
-									<header>
-										<h3>Weather Application </h3>
-									</header>
+									<h3>Weather Application </h3>
 									<p>
-										The first step is to select from the numerous templates on experience builder. We decided to go with the blank full screen template for our solution here. This was so we could get a feel for the interface and operability from scratch. 
+										The Clarington Weather App is powered by <a href="https://openweathermap.org/" target="_blank">openweathermap's</a> API for weather data and is a supporting product within the
+										situational awareness 2.0 web app. The data for viewing precipitation is sourced from <a href="https://www.rainviewer.com/api.html" target="_blank">Rainviewer's</a> API and is managed by a leaflet plugin called <a href="https://github.com/mwasil/Leaflet.Rainviewer" target="_blank">Leaflet.Rainviewer</a>.
+										<br>
+										 
 									</p>
 									<div class="photos">
 										<img src="images/MylesXPBuild0.png" alt="Experience Builder Template Selection">
@@ -72,7 +71,8 @@
 									</div>
 									<h3>Traffic Watch Dashboard</h3> 
 									<p>
-										The traffic watch dashboard was created using Esri's ArcGIS Dashboards service. The community service layer within the dashboard was created and 
+										The traffic watch dashboard was created using Esri's ArcGIS Dashboards service and is a suppoting product within the situational awareness 2.0 web app.
+										The community service layer within the dashboard was created and 
 										symbolized using ArcGIS Pro. The live traffic data layer was sourced from ArcGIS Online data portal and is owned, maintained, managed, and updated by
 										ESRI.<br>The traffic layer was set to refresh every 5 minutes in order to orient the emergency services team with the most current traffic conditions
 										at any given time. Icons for incident severity were also changed to appropriately convey the gravity of a road incident, ranging from Critical to Low-importance. 

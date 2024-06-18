@@ -151,12 +151,12 @@ input, select, textarea {
 	}
 
 	a {
-		color: #d52349;
-		text-decoration: underline;
+		color: #bf8600;
+		text-decoration: none;
 	}
 
 		a:hover {
-			text-decoration: none;
+			color: #e9b02c;
 		}
 
 	br.clear {
