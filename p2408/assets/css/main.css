@@ -2967,7 +2967,18 @@ input, select, textarea {
 		color: #ffffff;
 	}
 
+	.solutions a{
+		color: #bf8600;
+		font-style: italic;
+		cursor: pointer;
+	}
 
+	.solutions a:hover{
+		letter-spacing: 1px;
+	}
   
+	.solutions{
+		text-align: center;
+	}
 
   
