@@ -54,6 +54,9 @@
 									simplicity and easy navigation for the users. 
 
 								</p>
+								<div class = 'photos'>
+										<img src="images/webAppFlowChart2.png" alt="Flowchart of the web app building process">
+								</div>
 								<!-- Supporting Products -->
 								<section>
 									<h3>Weather Application </h3>
@@ -61,14 +64,17 @@
 										The Clarington Weather App is powered by <a href="https://openweathermap.org/" target="_blank">openweathermap's</a> API for weather data and is a supporting product within the
 										situational awareness 2.0 web app. The data for viewing precipitation is sourced from <a href="https://www.rainviewer.com/api.html" target="_blank">Rainviewer's</a> API and is managed by a leaflet plugin called <a href="https://github.com/mwasil/Leaflet.Rainviewer" target="_blank">Leaflet.Rainviewer</a>.
 										<br>
+										 The first thing we did was to create a basic HTML document with a stylesheet and JavaScript file that we linked to the HTML document. 
+										 We then added the HTML elements to the document that would be used to display the weather information. After setting up the skeletal view of the application,
+										 we created a free user account on <a href="https://openweathermap.org/" target="_blank">openweathermap.org</a>. Upon acquiring our API Key, within the documentation, we secured the URL that would enable http requests from our JavaScript to <a href="https://openweathermap.org/" target="_blank">openweathermap.org</a>
+										 with the help ofour API Key. 
+										 The information gotten from the API Call is then parsed into the varying HTML elements to display the appropriate information to the user. 
+										 <br>
+										 Lastly, the rainviewer extension within the weather application was set up using <a href="https://leafletjs.com/">Leaflet</a> JavaScript.
+										 A map was created upon which the precipitation RADAR data was overlain. 
 										 
 									</p>
-									<div class="photos">
-										<img src="images/MylesXPBuild0.png" alt="Experience Builder Template Selection">
-									</div>
-									<div class="photos">
-										<img src="images/MylesXPBuild1.png" alt="Blank Template Selected on Experience Builder">
-									</div>
+			
 									<h3>Traffic Watch Dashboard</h3> 
 									<p>
 										The traffic watch dashboard was created using Esri's ArcGIS Dashboards service and is a suppoting product within the situational awareness 2.0 web app.
@@ -101,9 +107,7 @@
 											Webmap: Hosts the map and its layers
 										</li>
 									</ol>
-									<div class="photos">
-										<img src="images/MylesXPBuild2.png" alt="Selectind Data Sources to connect to on Experience Builder">
-									</div>
+									
 								</section>
 
 								<!-- Concluding Section -->
