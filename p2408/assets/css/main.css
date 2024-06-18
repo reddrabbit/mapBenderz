@@ -2641,7 +2641,7 @@ input, select, textarea {
 
 				#navPanel .link {
 					display: block;
-					color: #ffffff;
+					color: #b6b6b6;
 					text-decoration: none;
 					height: 44px;
 					line-height: 44px;
@@ -2857,6 +2857,7 @@ input, select, textarea {
 					font-weight: 900;
 					font-size: 1.75em;
 					letter-spacing: -0.035em;
+					margin-top:30px ;
 				}
 
 		/* Intro */
