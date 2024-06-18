@@ -2174,7 +2174,7 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: #CCE8F4 url('../../images/LookingSouth.png');
+		background: #19252d url('../../images/LookingSouth.png');
 		background-position: center center;
 		background-size: 100%;
 		background-repeat: no-repeat;
@@ -2610,7 +2610,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:active:before {
-						background-color: #969696;
+						background-color: #c2c2c2;
 					}
 
 			#navPanel {
@@ -2634,14 +2634,14 @@ input, select, textarea {
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				color: #858484;
+				color: #ffffff;
 				/* background-image: url("images/bg02.png"); */
 				box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.35);
 			}
 
 				#navPanel .link {
 					display: block;
-					color: #888;
+					color: #ffffff;
 					text-decoration: none;
 					height: 44px;
 					line-height: 44px;
@@ -2853,7 +2853,7 @@ input, select, textarea {
 			}
 
 				#header h1 {
-					color: #252122;
+					color: #ffffff;
 					font-weight: 900;
 					font-size: 1.75em;
 					letter-spacing: -0.035em;
@@ -2926,7 +2926,7 @@ input, select, textarea {
 	}
 
 	.photos a{
-		color: #252122;
+		color: #ffffff;
 		text-decoration: none;
 		font-style: italic;
 	}
@@ -2937,7 +2937,7 @@ input, select, textarea {
 		margin: 10px auto;
 	}
 	.mobile a{
-		color: #252122;
+		color: #ffffff;
 		text-decoration: none;
 		font-style: italic;
 	}
