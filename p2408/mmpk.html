@@ -58,9 +58,7 @@
 										&lt;/div&gt;
 									</pre>
 								</p>
-								<div class="photos">
-									<img src="images/MMPKfunctions.png" alt="Screenshots of mmpk functionality">
-								</div>
+								
 								<p>
 									A truely offline dynamic Map was achieved with the esri file format mmpk (mobile map package). This file is created in ArcGIS pro and veiwed in esri Fieldmaps.
 									Advantages of Using an MMPK file
@@ -75,7 +73,7 @@
 								<div class="mobile">
 									<img src="images/MMPKmobileextent.jpg" alt="ArcGIS FieldMaps screenshot of full map extent">
 								</div>
-								<p>Success! But this only has 3 layers available offline, can we get more?   Yes! Checkout the next section</p>
+
 								<section>
 									<header>
 										<h3>Set up</h3>
@@ -100,7 +98,7 @@
 									<p>
 										The mmpk file can not be editted once created, but in our changing world, new roads are built, businesses close, and lots are severed, regularily. To keep this emergency response map upto date
 										it must be regenerated regularly. The best way to do this is with a scedualed Arcpy script. Once the symbolization and popups are initially set up and saved, a Arcpy script can create a new file.
-										This script 
+										<p>This script:</p> 
 										<ol><li>Pulls the specified data layers from the server</li>
 											<li>Recreates Business, Address, and Community Service locators with current data</li>
 											<li>Packages the map into a .mmpk file format</li>
