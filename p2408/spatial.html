@@ -86,9 +86,7 @@
 									<li>1 = Lowest Suitability  </li>
 									
 									
-									<div class="photos">
-										<img src="images/MylesLeaf1.png" alt="GeoJSON Data">
-									</div>
+						
 									<h4>AHP Weight Assignment </h4>
 									<p>
 										Utilizing a <a href="https://bpmsg.com/ahp/ahp.php" target="_blank">specialized website tool </a> intended for AHP tasks, 
@@ -96,7 +94,7 @@
 										The weights are determined by comparing each criterion with each of the other criterion individually.
 									</p>
 									<div class="photos">
-										<img src="images/MylesLeaf2.png" alt="GeoJSON Data">
+										<img src="images/AHP.png" alt="AHP hierarchies">
 									</div>
 									<h4>Weighted Overlay Tool </h4>
 									<p>
@@ -108,15 +106,15 @@
 										<img src="images/WeightedOverlay.png" alt="WeightedOverlayTool">
 									</div>
 									<header>
-										<h3>Limitations/Improvements </h3>
+										<h4>Limitations/Improvements </h4>
 									</header>
 									<p>
 										An area of improvement for this MCDA is to add more sources of data. 
-										In this MCDA, a limitation is the public data available to access to serve as the criteria. 
+										In this MCDA, a limitation is the lack of public data available to access to serve as the criteria. 
 										The theme of this MCDA is general hazards in the municipality, 
 										but there are only five criteria which do not cover every risk occurrence. 
-										For example, this MCDA does not have a criteria such as distance from a forest which could represent
-										hazards such as forest fires or threats. 
+										For example, this MCDA does not have a criteria such as distance from a forest which could represent a 
+										hazard such as forest fires. 
 										
 									</p>
 
@@ -130,7 +128,7 @@
 										and then running the Network Analysis tool in ArcGIS Pro. 
 										The Network Analysis tool contains the service area and closest facility analysis which are used create the outputs.
 										Preliminary data preparation involved linear referencing the chosen road layer as well as the other points involved in the network analysis, called incidents and facilities.  
-										3 new fields were added to the road layer called speed limit, distance and drivetime.  
+										Three new fields were added to the road layer called speed limit, distance and drivetime.  
 										The field drivetime is used as the Impedance or cost of the network analysis. 
 									</p>
 									<p>Drivetime(min) = (distance*60)/(speed limit)</p>
@@ -142,8 +140,9 @@
 										The network dataset was created in a feature dataset and configured according to the requirements of the analysis by setting up network sources and travel attributes. 
 									</p>
 									<div class="photos">
-										<img src="images/MylesGP1.png" alt="SETTING UP GEOPACAKGE PLUGIN FOR LEAFLET">
+										<img src="images/Network dataset properties.png" alt="Network dataset properties used in Network analysis ">
 									</div>
+									
 									<h4>Service Area and Closest Facility</h4>
 									<p>
 										After configuring the network dataset and setting it as the source, the service area and closest facility analysis are run. 
@@ -152,13 +151,13 @@
 										The closest facility analysis required the import of facilities (community service facilities) and incidents (businesses or civic addresses). 
 									</p>
 									<div class="photos">
-										<img src="images/MylesGP2.png" alt="SETTING UP GEOPACAKGE PLUGIN FOR LEAFLET">
+										<img src="images/NetworkAnalysisTab.png" alt="ArcGis Pro Network Analysis options">
 									</div>
 									
 								</section>
 								<section>
 									<header>
-										<h3>Limitations/Improvements </h3>
+										<h4>Limitations/Improvements </h4>
 									</header>
 									<p> One area the closest facility could improve on is to incorporate barriers to close off areas to 
 										simulate a hazard or danger in an emergency. An example would be closing off several roads due to flooding. 
