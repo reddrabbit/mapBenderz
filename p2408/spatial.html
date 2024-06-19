@@ -44,108 +44,135 @@
 									<p>Integrating Risk Assessment and Routing for Effective Emergency Management</p>
 								</header>
 								<p>
-									Leaflet is a free and open-source JavaScript library for mobile-friendly interactive maps. It provides a simple and intuitive way to display spatial data and allows users to interact with the map and the data. Leaflet, developers can easily customize map styles, add layers with different data sources, and incorporate interactive elements.  
+									The network analysis and Multi-Criteria Decision Analysis 
+									(MCDA) are tools that can help municipalities in planning for emergencies. In the event of an emergency such 
+									as flooding or a chemical spill, quick and effective emergency management is critical for resource
+									allocation and for providing directions to the citizens of the municipality. THe "At risk areas" MCDA
+									displays on a map areas which are most vulnerable to hazards such as traffic accidents or flooding. The 
+									Network Analysis using a closest facilty and service area analysis find the fastest and closest drivetimes from
+									a location to a temporary evacuation center.
 								</p>
 								<section>
 									<header>
-										<h3>Successful Attempt</h3>
+										<h3>MCDA</h3>
 									</header>
-									<h4>GeoJSON files and Leaflet:</h4>
+									
 									<p>
-										Our thought process going into this was simple. Have the GeoJSON file reside within the same directory as all the websites assets. The solution was a success, but this depends on the specific needs of the user. If a Basemap is necessary, then this solution would not be a fully offline app. However, in our case, having a basemap was not as important. All we wanted was a way to display the data offline from a web app if the network goes out. 
+										The overall MCDA workflow consists of assigning weights to the selected criteria using an Analytical Hierarchical Process (AHP). 
+										This allows the Weighted Overlay tool to run to complete the MCDA. Five criteria were evaluated and selected based on the idea 
+										that they would have a high impact on presenting a risk or hazard:
 									</p>
-									<h5>Download GeoJSON Data</h5>
+									<h4>Criteria</h4>
+									<li>Distance to floodlines (53%)</li>
+									<li>Distance to a rural road (15%)</li>
+									<li>Distance to an urban road (14%)</li>
+									<li>Distance to a railroad (13%) </li>
+									<li>Distance to a nuclear plant (5%)</li>
+									
+									<h4>Criteria Categorization</h4>
 									<p>
-										First thing is to download a GeoJSON file or convert data to a GeoJSON. We created and then downloaded a GeoJSON file from this 
-										<a href="https://geojson.io.">Cool Website for GeoJSON</a>
+										The Criteria as listed above are organized into a Analytical Hierarchal Process (AHP) rating  
+										Schema from 1-9, where 1 is the lowest suitability or highest risk and 9 is the highest suitability or least risk. 
 									</p>
-									<p>Once the GeoJSON has been downloaded, move it over to the same workspace where the website’s assets (HTML, CSS, and JavaScript) are stored.</p>
+
+									<li>9 = Highest Suitability </li>
+									<li>8 = Very High Suitability </li>
+									<li>7 = High Suitability </li>
+									<li>6 = Moderately High Suitability</li>
+									<li>5 = Moderate Suitability</li>
+									<li>4 = Moderately Low Suitability </li>
+									<li>3 = Low Suitability </li>
+									<li>2 = Very Low Suitability </li>
+									<li>1 = Lowest Suitability  </li>
+									
+									
 									<div class="photos">
 										<img src="images/MylesLeaf1.png" alt="GeoJSON Data">
 									</div>
-									<h5>Access GeoJSON Data</h5>
+									<h4>AHP Weight Assignment </h4>
 									<p>
-										In the JavaScript portion of the html document, initiate a fetch parameter that would go ahead to locate the geoJSON and then deliver this data to the map: 
+										Utilizing a <a href="https://bpmsg.com/ahp/ahp.php" target="_blank">specialized website tool </a> intended for AHP tasks, 
+										an AHP Pairwise Comparison Process was conducted to assign weights to each criteria. 
+										The weights are determined by comparing each criterion with each of the other criterion individually.
 									</p>
 									<div class="photos">
 										<img src="images/MylesLeaf2.png" alt="GeoJSON Data">
 									</div>
+									<h4>Weighted Overlay Tool </h4>
 									<p>
-										Once the JS has been configured as described, run the code from a good server. Like GitHub or a local server made via python. The result looked like this. The line feature is the geoJSON data being called locally: 
+										After completing the AHP Pairwise Comparison Process and the Weighting Schema, 
+										the Weighted Overlay tool is run using reclassified surface criteria with their assigned weights 
+										to produce a final suitability surface combining every criteria. 
 									</p>
 									<div class="photos">
-										<a href="https://reddrabbit.github.io/Technical-Dev-Log/webSolutions/leafletMaps/offlinetest/index.html" target="_blank">Click to view map<img src="images/MylesLeaf3.png" alt="GeoJSON Data"></a>
+										<img src="images/WeightedOverlay.png" alt="WeightedOverlayTool">
 									</div>
 									<header>
-										<h3>Drawbacks and Limitations: </h3>
+										<h3>Limitations/Improvements </h3>
 									</header>
 									<p>
-										Initially, we were running the code via the VS Code live server window. VS Code’s live server is not very solid, and this led us to a CORS error when we tried to load the local GeoJSON data.  Do not use VS CODE for this.   It was an easy fix for us, however, because we were able to deploy a local server using Python.  
-										We could not find a way to load up a vector tile package locally. This resulted in the basemap being lost whenever we would set the internet connection mode to offline. 
-										GeoJSON data cannot be too large in size either. While it is a great way to load data locally, if the file size is too big, meaning the data contained in it is just too much, it will put a strain on the client as it tries to process the data. This resulted in slow render time for the team when we tried this.  
+										An area of improvement for this MCDA is to add more sources of data. 
+										In this MCDA, a limitation is the public data available to access to serve as the criteria. 
+										The theme of this MCDA is general hazards in the municipality, 
+										but there are only five criteria which do not cover every risk occurrence. 
+										For example, this MCDA does not have a criteria such as distance from a forest which could represent
+										hazards such as forest fires or threats. 
+										
 									</p>
-
 
 
 									<header>
-										<h3>Unsuccessful Attempt</h3>
+										<h3>Network Anaysis</h3>
 									</header>
-									<h4>Geopackages and Leaflet:</h4>
+									<h4>Data preparation</h4>
 									<p>
-										The first leaflet functionality we tried was its plugin that’s compatible with geopackages. 
-										What’s a geopackage you ask? (hopefully, you asked that...) You can go here to learn about it: <a href="https://www.geopackage.org/">Geopackages</a>. 
-										<strong>TL;DR:</strong> It’s another way of storing spatial data as you would a shape file.   In theory, it sounded like the key to solving our problem but alas, it proved to be more of a challenge than we had hoped.  
+										The network analysis workflow primarily consists of creating and configuring a road layer as a network dataset 
+										and then running the Network Analysis tool in ArcGIS Pro. 
+										The Network Analysis tool contains the service area and closest facility analysis which are used create the outputs.
+										Preliminary data preparation involved linear referencing the chosen road layer as well as the other points involved in the network analysis, called incidents and facilities.  
+										3 new fields were added to the road layer called speed limit, distance and drivetime.  
+										The field drivetime is used as the Impedance or cost of the network analysis. 
 									</p>
-									<h5>Set up API to Access Geopackages Offline: </h5>
+									<p>Drivetime(min) = (distance*60)/(speed limit)</p>
+									<h4>Network dataset creation </h4>
 									<p>
-										The first step is to author the JS file that will be making the requests to Leaflet to retrieve a basemap and load up the Geopackage API to grant access to its JS libraries for accessing local geopackages.  
+										The Network Analysis tool in ArcGIS Pro requires a network data source which can be provided by ArcGIS Online 
+										using credits or an alternative source can be built and provided by the user. 
+										This analysis uses a network data source that is built. Road topology was edited for topological errors that could cause issues with routing.  
+										The network dataset was created in a feature dataset and configured according to the requirements of the analysis by setting up network sources and travel attributes. 
 									</p>
 									<div class="photos">
 										<img src="images/MylesGP1.png" alt="SETTING UP GEOPACAKGE PLUGIN FOR LEAFLET">
 									</div>
-									<h5>Load the Geopackage data:</h5>
+									<h4>Service Area and Closest Facility</h4>
 									<p>
-										Next, we added a few lines of code to load the geopackage and set up points of interest markers. We could not generate our own geopackage file from shapefiles, so we decided to use one from the National Geospatial Intelligence Agency's repository. 
+										After configuring the network dataset and setting it as the source, the service area and closest facility analysis are run. 
+										Both analysis require the import of facilities and incidents.
+										The service area analysis required the import of facilities (community service facilities).  
+										The closest facility analysis required the import of facilities (community service facilities) and incidents (businesses or civic addresses). 
 									</p>
 									<div class="photos">
 										<img src="images/MylesGP2.png" alt="SETTING UP GEOPACAKGE PLUGIN FOR LEAFLET">
 									</div>
-									<h5>Configure the Feature Layers for Query Functions: </h5>
-									<p>
-										The last step in the JS process is to configure a function that would enable the user to get information on each feature layer stored.
-									</p>
-									<div class="photos">
-										<img src="images/MylesGP3.png" alt="SETTING UP GEOPACAKGE PLUGIN FOR LEAFLET">
-									</div>
-									<h5>Set up HTML to View Results: </h5>
-									<p>
-										Finally, we created an HTML document and linked the local JS file with other JS libraries to facilitate the offline mapping solution using geopackages.  
-									</p>
-									<div class="photos">
-										<img src="images/MylesGP0.png" alt="HTML DOC FOR LEAFLET GEOPACAKGE PLUGIN">
-									</div>
+									
 								</section>
 								<section>
 									<header>
-										<h3>Drawbacks and Limitations: </h3>
+										<h3>Limitations/Improvements </h3>
 									</header>
-									<p>
-										While the geopackage idea seemed like a great idea, we were first limited in trying to get a geopackage of our own. We tried using a few web pages to convert a shapefile into a geopackage, but they were not very fruitful.  
-										The JavaScript libraries to support the development were either outdated or no longer available on the National Geospatial-Intelligence's repository. And while the idea seemed like it would have been fantastic, the script for deployment had some codes that would rely on an internet connection to grab a tiled basemap from leaflet. We spent quite a bit of time trying to find alternatives, but they all led nowhere.  
-										We were left with the option of referencing a geopackage from a repository on GitHub and then overlaying that geopackage on top of a leaflet basemap. To mimic an offline solution, we added a print option to the map. This was not as bright an idea as we had hoped. Unless you are looking to have a static display of the map, then this would be ideal. However, 99% of the time, web app users want to interact with the maps, so do not attempt this. The result, which ended up as just a base
-										leaflet map can be found here: <a href="https://reddrabbit.github.io/Technical-Dev-Log/webSolutions/leafletMaps/GPKGLeaflet.html">Not So Offline Map</a>
+									<p> One area the closest facility could improve on is to incorporate barriers to close off areas to 
+										simulate a hazard or danger in an emergency. An example would be closing off several roads due to flooding. 
+										The current analysis assumes all roads are open with no road closures.
+										The routing analysis included in the network analysis tool allows for the creation or import of barriers 
+										which will cause the created route to use a different road if it is blocked off. 
 									</p>
+									
 									
 								<!-- Concluding Section -->
 									<header>
-										<h3>In Conclusion</h3>
+										<h3>Conclusion</h3>
 									</header>
-									<p>
-										Loading up a local version of the data, however, is a great idea. While it does require an internet connection to get things going, once it runs, it can go offline, and the data will be available. With a locally made tile pack for a basemap, this solution just might be able to solve the problem of offline map needs. 
-									</p>
-									<p>
-										The geopackage option was not a very good idea because it lacked resources and ample documentation. The project required us to use existing solutions in tandem with one another where possible, and not to reinvent the wheel. Itt would have made for a great solution if only resources were maintained.  
-									</p>
+									
 								</section>
 							</article>
 
