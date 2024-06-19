@@ -78,10 +78,11 @@
 								<p>Success! But this only has 3 layers available offline, can we get more?   Yes! Checkout the next section</p>
 								<section>
 									<header>
-										<h3>Increased functionality using .mmpk Files!</h3>
+										<h3>Set up</h3>
 									</header>
 									
 									<p>
+										
 										.mmpk files are made through ArcGIS Pro, and allow you to create maps that are searchable, and have 
 										custom popups and bookmarks. Following this tutorial with Clarington's data I was able to create a 
 										.mmpk file:
@@ -89,6 +90,23 @@
 									</p>   
 										<p>Once you download the .mmpk field maps can view all 8 operational layers, access bookmarks and any set  
 									</p>
+									
+								</section>
+								<section>
+									<header>
+										<h3>Update Script</h3>
+									</header>
+									
+									<p>
+										The mmpk file can not be editted once created, but in our changing world, new roads are built, businesses close, and lots are severed, regularily. To keep this emergency response map upto date
+										it must be regenerated regularly. The best way to do this is with a scedualed Arcpy script. Once the symbolization and popups are initially set up and saved, a Arcpy script can create a new file.
+										This script 
+										<ol><li>Pulls the specified data layers from the server</li>
+											<li>Recreates Business, Address, and Community Service locators with current data</li>
+											<li>Packages the map into a .mmpk file format</li>
+											<li>Sends an Email notification of completion or error report</li>
+										</ol>
+									</p>   
 									
 								</section>
 
